@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #11151F;
+}
+
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1260px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px #000;
+    background-color: white;
+    font-size: 1.1rem;
+}
+
+.container,
+.topBar,
+.main {
+    background-color: #076674;
+}
+
+.topBar {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.footer,
+.header,
+.container {
+    padding: 2rem 3rem;
+}
+
+.header,
+.footer {
+    background-color: #2D394B;
+}
+
+.footer {
+    color: darkslategray;
+    text-align: right;
+}
+
+.rightCol {
+    padding-top: 3em;
+}
+
+.titleText {
+    font-size: 2rem;
+    color: #F2F072;
+    letter-spacing: 1px;
+}
+
+#clearSavedBestScores,
+#displayBestScore,
+#messageConatiner,
+#endOfDeck,
+#guessContainer {
+    display: none;
+}
+
+#bestScoreContainer {
+    display: none;
+    background-color: goldenrod;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.instructions ul,
+#bestScoresList {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    list-style-type: disc;
+    color: rgb(1, 1, 1);
+    list-style-position: outside;
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+
+#startNewGame {
+    margin: 2rem;
+}
+
+#messageConatiner {
+    color: black;
+    margin: 2rem;
+    padding: 2rem 3rem;
+    background-color: #a94442;
+    border: 1px dashed white;
+    border-radius: 1rem;
+}
+
+button {
+    background: #31AF36;
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #0e8f12;
+    color: aliceblue;
+}
+
+.lowerBtn {
+    background-color: steelblue;
+
+}
+
+.lowerBtn:hover {
+    background-color: blue;
+}
+
+.higherBtn {
+    background-color: indianred;
+}
+
+.higherBtn:hover {
+    background-color: red;
+}
+
+#displayBestScore {
+    cursor: pointer;
+    color: rgb(242, 242, 244);
+}
+
+.guessContainer {
+    padding: 1rem;
+    background-color: rgb(242, 242, 244);
+    border-radius: 2rem;
+    border: 1px solid #2D394B;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#showCard {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .guessContainer {
+        padding: 2rem 3rem;
+    }
+
+    .topBar {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .lowerBtn {
+        margin-left: 2rem;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .leftCol {
+        width: 50%;
+    }
+
+    .rightCol {
+        padding-top: 0;
+        width: 50%;
+    }
+
+    #messageConatiner {
+        margin: 2rem 0;
+    }
+
+    .lowerBtn {
+        margin-left: 1rem;
+    }
+
+}
+
+
+/* Image fade */
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

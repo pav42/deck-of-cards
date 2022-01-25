@@ -39,7 +39,7 @@ const fetchNewDeck = () => {
             //Display Deck ID
             displayDeckId();
             //Show current score
-            ShowCurrentScore();
+            showCurrentScore();
             //Show Inital card
             card(card_img);
             //Show Best Scores
@@ -132,13 +132,13 @@ const calcScore = () => {
     if (((isHigher) && (curr >= prev)) || ((!isHigher) && (curr <= prev))) {
         score += 1;
         prev_card_value = curr_card_value;
-        ShowCurrentScore();
+        showCurrentScore();
     } else {
         endgame(false);
     }
 }
 
-const ShowCurrentScore = () => {
+const showCurrentScore = () => {
     document.getElementById('ShowCurrentScore').innerText = `Your score: ${score}`;
 }
 
@@ -166,6 +166,7 @@ const checkBestScore = (score) => {
 
     if (score > lowestScore) {
         saveBestScore(score, bestScores);
+        showBestScores();
     }
 }
 

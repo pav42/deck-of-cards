@@ -174,6 +174,11 @@ const checkBestScore = (score) => {
 const saveBestScore =(score, bestScores) => {
     // prompt user for a name.
     const name = prompt('You got a high score! Enter name:');
+
+    if(name == null){
+        return;
+    }
+
     const newScore = {
         score,
         name
